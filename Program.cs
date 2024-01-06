@@ -29,7 +29,14 @@
     public static void Main(string[] args)
     {
         object[] ar = {1, 2}, br = {3, 4, 5};
+        
+        Timing timer = new Timing();
+        timer.startTime();
         Array cr = Add<object[]>(ar, br);
+        timer.StopTime();
+        Console.WriteLine("Thoi gian chay: "+
+                timer.Result().TotalMilliseconds);
+
         for(int i=0; i<cr.Length; i++)
             Console.Write(cr.GetValue(i)+", ");
 
