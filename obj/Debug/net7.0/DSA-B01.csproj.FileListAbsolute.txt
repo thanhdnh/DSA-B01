@@ -1,0 +1,15 @@
+/Users/hoangthanh/DSA02/DSA-B01/bin/Debug/net7.0/DSA-B01
+/Users/hoangthanh/DSA02/DSA-B01/bin/Debug/net7.0/DSA-B01.deps.json
+/Users/hoangthanh/DSA02/DSA-B01/bin/Debug/net7.0/DSA-B01.runtimeconfig.json
+/Users/hoangthanh/DSA02/DSA-B01/bin/Debug/net7.0/DSA-B01.dll
+/Users/hoangthanh/DSA02/DSA-B01/bin/Debug/net7.0/DSA-B01.pdb
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.csproj.AssemblyReference.cache
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.AssemblyInfoInputs.cache
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.AssemblyInfo.cs
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.csproj.CoreCompileInputs.cache
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.dll
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/refint/DSA-B01.dll
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.pdb
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/DSA-B01.genruntimeconfig.cache
+/Users/hoangthanh/DSA02/DSA-B01/obj/Debug/net7.0/ref/DSA-B01.dll
