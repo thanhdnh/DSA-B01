@@ -10,7 +10,7 @@
         a = b;
         b = temp;
     }
-    public static T Add<T>(T a, T b){
+    public static T Add<T, Q>(T a, T b){
         if(a is Array && b is Array){
             Array ar = (dynamic)a;
             Array br = (dynamic)b;
@@ -22,29 +22,31 @@
                 sum.SetValue(ar.GetValue(i), i);
             for(int i=0; i<br.Length; i++)
                 sum.SetValue(br.GetValue(i), ar.Length+i);
-            return (dynamic)sum;
+            Q[] sumr = new Q[sum.Length];
+            for(int i=0; i<sum.Length; i++)
+                sumr[i] = (Q)sum.GetValue(i);
+            return (dynamic)sumr;
         }else
             return (dynamic)a + (dynamic)b;
     }
     public static void Main(string[] args)
     {
-        object[] ar = {1, 2}, br = {3, 4, 5};
+        int x = 2, y = 3;
+        string s1="di", s2="hoc";
+        string[] ar = {"1", "2"}, br = {"3", "4", "5"};
+        //Console.WriteLine($"{x}+{y}={Add<int, int>(x, y)}");
+        //Console.WriteLine($"{s1}+{s2}={Add<string, string>(s1, s2)}");
         
         Timing timer = new Timing();
         timer.startTime();
-        Array cr = Add<object[]>(ar, br);
+        Array cr = Add<string[], string>(ar, br);
         timer.StopTime();
-        Console.WriteLine("Thoi gian chay: "+
-                timer.Result().TotalMilliseconds);
-
-        for(int i=0; i<cr.Length; i++)
-            Console.Write(cr.GetValue(i)+", ");
-
-        int x = 2, y = 3;
-        string s1 = "di", s2 = "hoc";
-        Console.WriteLine("\n"+Add<int>(x, y));
-        Console.WriteLine(Add<string>(s1, s2));
-
+        Console.WriteLine("\nTime: " + timer.Result().Milliseconds);
+        
+        foreach(string v in cr)
+            Console.Write(v + " ");
+        /*object c = 2.3f;
+        Console.WriteLine(c.GetType());*/
         /*int x = 2, y = 3;
         Console.WriteLine($"x={x}, y={y}");
         Swap(ref x, ref y);
@@ -53,9 +55,9 @@
         /*int x = 2, y = 3;
         Console.WriteLine($"x={x}, y={y}");
         Swap<int>(ref x, ref y);
-        Console.WriteLine($"x={x}, y={y}");*/
+        Console.WriteLine($"x={x}, y={y}");
 
-        /*string xx = "di", yy = "hoc";
+        string xx = "di", yy = "hoc";
         Console.WriteLine($"x={xx}, y={yy}");
         Swap<string>(ref xx, ref yy);
         Console.WriteLine($"x={xx}, y={yy}");*/
