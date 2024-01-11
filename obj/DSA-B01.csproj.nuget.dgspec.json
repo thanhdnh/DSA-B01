@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hoangthanh/DSA02/DSA-B01/DSA-B01.csproj": {}
+    "/Users/hoangthanh/DSA/DSA-B01/DSA-B01.csproj": {}
   },
   "projects": {
-    "/Users/hoangthanh/DSA02/DSA-B01/DSA-B01.csproj": {
+    "/Users/hoangthanh/DSA/DSA-B01/DSA-B01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hoangthanh/DSA02/DSA-B01/DSA-B01.csproj",
+        "projectUniqueName": "/Users/hoangthanh/DSA/DSA-B01/DSA-B01.csproj",
         "projectName": "DSA-B01",
-        "projectPath": "/Users/hoangthanh/DSA02/DSA-B01/DSA-B01.csproj",
+        "projectPath": "/Users/hoangthanh/DSA/DSA-B01/DSA-B01.csproj",
         "packagesPath": "/Users/hoangthanh/.nuget/packages/",
-        "outputPath": "/Users/hoangthanh/DSA02/DSA-B01/obj/",
+        "outputPath": "/Users/hoangthanh/DSA/DSA-B01/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hoangthanh/.nuget/NuGet/NuGet.Config"
